@@ -1,0 +1,10 @@
+[Unit]
+Description=Check if native MAX98390 HDA support has landed upstream
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/max98390-hda-check-upstream.sh
+
+[Install]
+WantedBy=multi-user.target
